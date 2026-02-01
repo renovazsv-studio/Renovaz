@@ -174,3 +174,30 @@ footer {
     background: var(--acento);
     transform: translateY(-3px);
 }
+
+.lista-servicios {
+    margin: 30px 0 50px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.lista-servicios li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 500;
+}
+
+.materiales {
+    margin-top: 60px;
+}
+
+.materiales h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: var(--acento);
+}
+
+.materiales p {
+    max-width: 900px;
+    margin-bottom: 18px;
+}
