@@ -157,3 +157,20 @@ footer {
 .whatsapp:hover {
     transform: scale(1.1);
 }
+
+.btn-portafolio {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 35px;
+    background: var(--negro);
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 40px;
+    transition: all 0.3s;
+}
+
+.btn-portafolio:hover {
+    background: var(--acento);
+    transform: translateY(-3px);
+}
