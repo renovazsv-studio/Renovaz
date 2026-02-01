@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --negro: #111;
+    --gris-oscuro: #2b2b2b;
+    --gris-claro: #f5f5f5;
+    --acento: #b08d57; /* tono madera elegante */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--gris-claro);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ), url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+/* NAV */
+nav {
+    background: var(--negro);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--acento);
+}
+
+/* SECCIONES */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: var(--acento);
+    display: block;
+    margin-top: 10px;
+}
+
+/* SERVICIOS */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* GALERÍA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* CONTACTO */
+.contacto {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+    background: var(--negro);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+    z-index: 999;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
